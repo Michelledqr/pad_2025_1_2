@@ -11,7 +11,7 @@ setup(
         "pandas",
         "openpyxl",
         "requests",
-        "beautifulsoup4"
+        "beautifulsoup4",
         "sqlite3"
     ]
 )
