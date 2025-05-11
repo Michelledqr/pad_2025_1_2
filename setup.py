@@ -6,7 +6,7 @@ setup(
     author="Michelle Robinson",
     authon_email="michelle.robinson@est.iudigital.edu.co",
     description="Prog para análisis de datos",
-    pymodules=["actividad1","actividad2"],
+    pymodules=["actividad1","actividad2","actividad3","actividad4"],
     install_requires=[
         "pandas",
         "openpyxl",
