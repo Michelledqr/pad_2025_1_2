@@ -12,5 +12,6 @@ setup(
         "openpyxl",
         "requests",
         "beautifulsoup4"
+        "sqlite3"
     ]
 )
