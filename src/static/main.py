@@ -14,7 +14,7 @@ def main():
     df.drop(columns='idx',inplace=True)
     database.save_df(df)
     df_db2 = database.get_data("currency_db")
-    df_db2.to_csv("src/edu_pad/static/db/DataInDatabase.csv", index=False)
+    df_db2.to_csv("src/static/db/DataInDatabase.csv", index=False)
 
 
 

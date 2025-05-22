@@ -4,14 +4,14 @@ import os
 
 class DataBase:
     def __init__(self):
-        self.pathdb = "src/edu_pad/static/db/currency.db"
+        self.pathdb = "src/static/db/currency.db"
 
     def save_df(self,df=pd.DataFrame()):
         df = df.copy()
         try:
             conn = sqlite3.connect(self.pathdb)
-            df["date_create"]= "2025-11-04"
-            df["date_update"] = "2025-11-04"
+            df["date_create"]= "2025-05-21"
+            df["date_update"] = "2025-05-21"
             print (df.head())
             df.to_sql("currency_db",conn,if_exists='replace',index=False)
             print(f"Currency DB - saved! {df.shape[0]} records.")
@@ -27,8 +27,9 @@ class DataBase:
             print("# of records at DB {}".format(df.shape[0]))
             return df
         except Exception as errores:
-            return df
             print("Error reading Database {str(nombre_tabla)}: {str(errores)}")
+            return df
+            
 
 """
 data = {"ID": [1, 2, 3], "Nombre": ["Aaaa", "Bbb", "Ccc"], "Edad": [25, 30, 35]}
