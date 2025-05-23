@@ -29,7 +29,11 @@ jobs:
         run: pip install -e .
       - name: Paso 7 - Ejecutar Main
         run: python src/static/main.py
-      - name: Paso 8 - Guardar el commit con el ultimo cambio desde pipeline
+      - name: Paso 8 - Valida repositorio previo a commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+      - name: Paso 9 - Guardar el commit con el ultimo cambio desde pipeline
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Genera archivo csv de las web
