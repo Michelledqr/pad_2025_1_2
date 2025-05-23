@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: edu_pad
+Version: 0.0.1
+Summary: Prog para análisis de datos
+Author: Michelle Robinson
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary
