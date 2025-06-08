@@ -12,9 +12,8 @@
 
 ## 3. Requisitos de configuración
 	Repositorio en GitHub: Se configura el repositorio en GitHub para contener el código fuente de la aplicación Python.
-	Docker: Archivo Dockerfile en el repositorio que define los elementos que componen la imagen Docker 
-	Acceso a DockerHub: Asegurar el acceso al servidor Duckerhub desde donde se despliega la aplicación, con Docker instalado y configurado
-
+	Docker: Archivo Dockerfile en el repositorio que define los elementos que componen la imagen Docker. 
+	Acceso a DockerHub: Asegurar el acceso al servidor Duckerhub desde donde se despliega la aplicación.
 ## 4. Flujo de trabajo
 	* Creación de archivo YAML en la ubicación .gitHub/workflows
 	* Configuracion del flujo de trabajo en el archivo  despliegue.yml
