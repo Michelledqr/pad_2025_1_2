@@ -6,7 +6,9 @@
 
 ## 2. Descripción
 
-    Se realiza un scrapper de la página Trading economics de la sección currecies, el cual entrega el listado de la cotización de los pares mayores de monedas en el mundo. El objetivo es hacer el desarrollo de la funcionalidad scrapper utilizando python, y a traves de GITHUB actions realizar la integración de las modificaciones realizadas durante el desarrollo del proyecto y desplegar a través de un contenedor docker. La configuración de integración y despliegue se hace a través de GitHub Actions
+    Se realiza un scrapper de la página Trading economics de la sección currecies, el cual entrega el listado de la cotización de los pares mayores de monedas en el mundo. 
+    
+    El objetivo es hacer el desarrollo de la funcionalidad scrapper utilizando python, y a traves de GITHUB actions realizar la integración de las modificaciones realizadas durante el desarrollo del proyecto y desplegar a través de un contenedor docker. La configuración de integración y despliegue se hace a través de GitHub Actions
 
 ## 3. Requisitos de configuración
 	Repositorio en GitHub: Se configura el repositorio en GitHub para contener el código fuente de la aplicación Python.
