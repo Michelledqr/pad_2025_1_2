@@ -1,5 +1,6 @@
 import pandas as pd
 import sqlite3
+from datetime import date
 import os
 
 class DataBase:
@@ -10,8 +11,8 @@ class DataBase:
         df = df.copy()
         try:
             conn = sqlite3.connect(self.pathdb)
-            df["date_create"]= "2025-05-21"
-            df["date_update"] = "2025-05-21"
+            df["date_create"]= date.today()
+            df["date_update"] = date.today()
             print (df.head())
             df.to_sql("currency_db",conn,if_exists='replace',index=False)
             print(f"Currency DB - saved! {df.shape[0]} records.")
