@@ -1,1 +1,23 @@
 # pad_2025_1_2
+
+## 1. Titulo el proyecto
+
+    CI/CD de aplicación mediante GitHub Actions y Docker
+
+## 2. Descripción
+
+    Se realiza un scrapper de la página Trading economics de la sección currecies, el cual entrega el listado de la cotización de los pares mayores de monedas en el mundo. El objetivo es hacer el desarrollo de la funcionalidad scrapper utilizando python, y a traves de GITHUB actions realizar la integración de las modificaciones realizadas durante el desarrollo del proyecto y desplegar a través de un contenedor docker. La configuración de integración y despliegue se hace a través de GitHub Actions
+
+## 3. Requisitos de configuración
+	Repositorio en GitHub: Se configura el repositorio en GitHub para contener el código fuente de la aplicación Python.
+	Docker: Archivo Dockerfile en el repositorio que define los elementos que componen la imagen Docker 
+	Acceso a DockerHub: Asegurar el acceso al servidor Duckerhub desde donde se despliega la aplicación, con Docker instalado y configurado
+
+## 4. Flujo de trabajo
+	* Creación de archivo YAML en la ubicación .gitHub/workflows
+	* Configuracion del flujo de trabajo en el archivo  despliegue.yml
+	* Configuración de parámetros de acceso en GitHub secrets
+	* Validación de despliegue haciendo un cambio en el código y solicitando GitHub.commit a la rama desplegada
+
+## 5. Conclusiones
+	El flujo de trabajo de GitHub Actions permite automatizar el proceso de actualización, construcción y despliegue de una aplicación de forma tal que para el programador, una vez configurada la ruta de actualización y despliegue se hace inmediata la carga de modificaciones al código fuente evitando la demora por intervención humana en la arquitectura. 
