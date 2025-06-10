@@ -1,4 +1,3 @@
-README.md
 setup.py
 src/edu_pad.egg-info/PKG-INFO
 src/edu_pad.egg-info/SOURCES.txt
